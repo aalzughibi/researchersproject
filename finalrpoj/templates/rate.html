@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+registration
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Rate Page </h1>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{data.as_p}}
+        <button type="submit" class="btn">set rate</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+More details
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>details Page </h1>
+    <div class="res">
+        <table>
+            <tr>
+                <td colspan="2"> Name:{{data.user.first_name}} {{data.user.last_name}}</td>
+            </tr>
+
+            <tr>
+                <td>email: {{data.user.email}}</td>
+            </tr>
+            <tr>
+                <td>Phone: {{data.mobile}}</td>
+            </tr>
+            <tr>
+                    <td>Rating: {{data.aver}}/10</td>
+                
+            </tr>
+            <tr>
+                <td>
+
+{%if user.username != data.user.username%}
+<a href="{% url 'rate' data.id %}">Go to rating</a>
+{%endif%}
+
+</td>
+            </tr>
+        </table>
+        <form action="" method="post">
+                {%csrf_token%}
+                <button type="submit" class="btn">Send email</button>
+            </form>
+    </div>
+</div>
+{% endblock %}

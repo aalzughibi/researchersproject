@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Researchers
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1> Researchers </h1>
+{%for i in data%}
+{%if user.username != i.user.username%}
+    <div class="res">
+        <table>
+                <tr>
+                        <td colspan="2"> Name:{{i.user.first_name}} {{i.user.last_name}}</td>
+                    </tr>
+        
+                    <tr>
+                        <td>email: {{i.user.email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Phone: {{i.mobile}}</td>
+                    </tr>
+                    <tr>
+                            <td>Rating: {{i.aver}}/10</td>
+                        
+                    </tr>
+<tr>
+<td>
+
+    <a href="{% url 'details' i.id %}">More details and rate</a>
+</td>
+</tr>
+        </table>
+
+    </div>
+   {%endif%}
+{%endfor%}
+</div>
+
+{% endblock %}

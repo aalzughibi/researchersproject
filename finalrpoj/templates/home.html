@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+
+{% endblock %}
+
+{% block body %}
+<h1>Researchs Page </h1>
+<div class="container">
+    {% for i in aa %}
+  
+    <div class="paper">
+
+        <p> user : {{ i.user.first_name }} {{ i.user.last_name }} </p>
+        <p> Subject : {{ i.subject }} </p>
+        <!-- <p> About the Research : {{ i.about }}</p> -->
+        <a href="{% url 'details-research' i.id%}">Read More...</a>
+
+
+
+
+    </div>
+
+
+    {% endfor %}
+</div>
+{% endblock %}
+

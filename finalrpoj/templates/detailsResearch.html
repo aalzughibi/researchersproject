@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About the Research
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+        <div class="paper">
+                <p><a href="{% url 'profile-details' data.id%}">Name : {{ data.user.first_name }} {{data.user.last_name}}   </a></p>
+                <!-- <p> Name : {{ data.first_name }} {{data.last_name}}  </p> -->
+                <p> Subject : {{ data.subject }} </p>
+                <p> description : {{ data.about }}</p>
+                {%if user.username != data.user.username%}
+                <form action="" method="post">
+                        {%csrf_token%}
+                                <button type="submit" class="btn">send email</button>
+                </form>
+                {%endif%}
+            </div>
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}

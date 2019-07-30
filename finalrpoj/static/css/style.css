@@ -1,0 +1,210 @@
+
+/* start base elemnts */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+ font-size: 25px;
+ background: rgb(216, 216, 216);
+}
+.header{
+   /* padding: 20px; */
+overflow: hidden;
+clear: both;
+background: rgb(231, 231, 231);
+margin-bottom: 20px;
+/* display: block; */
+/* margin 0 auto; */
+/* height: 110px; */
+
+}
+.cont{
+    display: block;
+}
+.header ul {
+    padding-top: 20px;
+    float: right;
+    /* width: 100%; */
+}.header ul li{
+    float: right;
+    display: inline;
+    list-style-type: none;
+    padding: 10px;
+    
+    /* font-size: 15px; */
+    /* width: 360px; */
+}
+
+.logo{
+    float: left;
+    /* padding-bottom: 100px; */
+    /* width: 100%; */
+}
+
+.header li a{
+padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.header li a:hover{
+background: rgb(119, 118, 118);
+border-left: solid 2px rgb(71, 71, 71); 
+border-right: solid 2px rgb(71, 71, 71); 
+color: black;
+}
+.footer{
+    background: rgb(231, 231, 231);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.footer li {
+    
+    list-style-type: none;
+    display: inline;
+    padding-left: 15px;
+
+}
+
+.footer li a{
+    text-decoration: none;
+}
+
+/* close base elements */
+/* reg.html */
+.container{
+    background: white;
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+    overflow: hidden;
+    
+    
+}   
+.container input{
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+
+
+}
+/* log.html */
+
+.btn{
+    background-color: #00aae3;
+    padding: 3px;
+    width: 80px;
+    height: 40px;
+    border: none; 
+    
+}
+
+.btn:hover{
+    background-color: rgb(231, 231, 231);
+}
+.container50{
+    background: white;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+.container50 input{
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+
+
+}
+/* home.html */
+.paper{
+    width: 31%;
+    /* height:  */
+    padding: 15px;
+    margin: 10px 1.15%;
+    color: black;
+    background: rgb(216, 216, 216);
+    float: left;
+    overflow: hidden;
+    
+    
+}
+/* .row{
+    float: none;
+    overflow: hidden;
+    
+} */
+.paper p{
+    /* height: 100px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+
+}
+
+.res{
+    width: 31%;
+    /* height:  */
+    padding: 15px;
+    margin: 10px 1.15%;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    color: black;
+    float: left;
+    overflow: hidden;
+    
+   
+}
+table {
+    border: 1px  solid black;
+    color: white;
+    background-color: #00aae3;
+   
+}
+
+
+.res table tr {
+    margin: 34px;
+    /* border: 1px solid black; */
+    padding: 4px;
+
+}
+.res table tr td{
+    padding: 4px;
+    padding-left: 5px;
+    /* border: 1px solid black; */
+}
+@media (max-width:500px){
+    
+    .header ul li{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .footer{
+        
+        font-size: 13px;
+    }
+    .paper{
+        float: none;
+        width: auto;
+        display: block;
+        overflow: none;
+    }
+    .res{
+        float: none;
+        width: auto;
+        display: block;
+        overflow: none;
+    }
+}
+
