@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylea.css' %}">
     <title>researchers | {% block title %}{% endblock %}</title>
 </head>
 
@@ -16,21 +16,21 @@
         <div class="cont">
 
             <div class="logo">
-                <div style="float: left;">
+                <div style="float: left; ">
 
-                    <a href="{%url 'home'%}"><img src="{% static 'image/logo.jpg' %}" alt="" width="200px"
+                    <a class="aaa" href="{%url 'home'%}"><img src="{% static 'image/logo.jpg' %}" alt="" width="200px"
                             height="100px"></a>
 
 
                 </div>
             </div>
             <ul>
-                <li><a href="{% url 'home' %}">home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
               
                 {% if user.is_authenticated %}
-                <li><a href="{% url 'logout' %}">logout</a></li>
-                <li><a href="{% url 'add-Research' %}">Add Research</a></li>
                 <li><a href="{% url 'Find-Researchers' %}">Researchers</a></li>
+                <li><a href="{% url 'add-Research' %}">Add Research</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
                 {%else%}
                 <li><a href="{% url 'register' %}">Register</a></li>
                 <li><a href="{% url 'login' %}">Sign in</a></li>

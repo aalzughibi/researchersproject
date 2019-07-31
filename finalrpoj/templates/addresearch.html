@@ -2,7 +2,7 @@
 
 {% block title %}
 Add Research
-
+</br>
 {% endblock %}
 
 {% block body %}
@@ -11,6 +11,7 @@ Add Research
     <div class="container50">
 {% csrf_token %}
 {{data.as_p}}
+    </br>
 <button type="submit" class="btn">Add</button>
     </div>
     

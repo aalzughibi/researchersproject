@@ -7,11 +7,21 @@
 }
 
 
-
+.aaa {
+ padding: 20px;
+ padding-top: 20px;
+ margin :10px auto;
+}
 
 body{
  font-size: 25px;
  background: rgb(216, 216, 216);
+ 
+ /* background: red; */
+}
+h1{
+    text-align: center;
+    margin-bottom: 5px;
 }
 .header{
    /* padding: 20px; */
@@ -24,6 +34,8 @@ margin-bottom: 20px;
 /* height: 110px; */
 
 }
+
+
 .cont{
     display: block;
 }
@@ -32,7 +44,7 @@ margin-bottom: 20px;
     float: right;
     /* width: 100%; */
 }.header ul li{
-    float: right;
+    float: left;
     display: inline;
     list-style-type: none;
     padding: 10px;
@@ -43,7 +55,7 @@ margin-bottom: 20px;
 
 .logo{
     float: left;
-    /* padding-bottom: 100px; */
+    padding-top: 10px;
     /* width: 100%; */
 }
 
@@ -54,10 +66,8 @@ padding: 10px;
 }
 
 .header li a:hover{
-background: rgb(119, 118, 118);
-border-left: solid 2px rgb(71, 71, 71); 
-border-right: solid 2px rgb(71, 71, 71); 
-color: black;
+background:#00aae3;
+color: white;
 }
 .footer{
     background: rgb(231, 231, 231);
@@ -117,6 +127,7 @@ color: black;
     width: 50%;
     padding: 20px;
     margin: 0 auto;
+    border-radius: 5px;
     
 }
 .container50 input{
@@ -125,6 +136,13 @@ color: black;
     width: 100%;
 
 
+}
+.container50 textarea{
+    width: 100%;
+
+}
+.container50 label{
+    width: 100%;
 }
 /* home.html */
 .paper{
